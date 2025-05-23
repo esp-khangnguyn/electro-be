@@ -105,7 +105,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of("https://electro-fe.vercel.app")); // domain FE
+        config.setAllowedOrigins(List.of("https://electro-fe.vercel.app", "https://electro-canada.vercel.app")); // domain FE
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true); // nếu bạn dùng cookie hoặc Authorization
